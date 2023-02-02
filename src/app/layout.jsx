@@ -1,8 +1,6 @@
 import '../styles/globals.scss'
 import { Roboto } from "@next/font/google"
 
-import Link from 'next/link'
-
 const roboto = Roboto({
   weight: ["100", "300", "400", "500", "700", "900"],
   style: ['normal', 'italic'],
@@ -19,12 +17,8 @@ export default function RootLayout({ children }) {
       */}
       <head />
       <body>
-        <nav>barra lateral
-          <Link href="projetos">Projetos</Link>
-          <Link href="">Home</Link>
-        </nav>
         {children}
-        </body>
+      </body>
     </html>
   )
 }

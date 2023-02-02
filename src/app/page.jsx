@@ -1,4 +1,4 @@
-import "./App.styles.scss";
+import "./App.scss";
 
 import SideBar from "@/components/SideBar/SideBar";
 import ShowContent from "@/components/ShowContent/ShowContent";

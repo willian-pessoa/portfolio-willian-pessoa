@@ -1,0 +1,15 @@
+.side-bar {
+  width: 30%;
+  height: calc(100% - 40px);
+  border: 3px solid $text;
+  border-left: 0;
+  margin: 20px;
+
+  @include mobile{
+    margin: 10px;
+    width: calc(100% - 20px);
+    height: 15%;
+    border-top: 0;
+    border-left: 3px solid;
+  }
+}

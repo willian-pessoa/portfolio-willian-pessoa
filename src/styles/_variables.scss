@@ -1,0 +1,15 @@
+$background: #630000;
+$text: white;
+$secondary: #b50e2a;
+
+@mixin tablet {
+  @media (max-width: 996px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: 610px) {
+    @content;
+  }
+}

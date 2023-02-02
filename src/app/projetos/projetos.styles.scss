@@ -1,0 +1,13 @@
+.projetos {
+  position: absolute;
+  width: 100vw;
+  height: 90vh;
+  bottom: 0;
+  background-color: $secondary;
+  animation: show 0.7s ease;
+}
+
+@keyframes show {
+  from {bottom: -90vh;}
+  to {bottom: 0;}
+}

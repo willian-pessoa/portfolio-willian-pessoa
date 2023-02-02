@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: $background;
+  color: $text;
+}
+
+body{
+  overflow: hidden;
+}
+
+ul {
+  list-style: none;
+}
+
+a,
+button {
+  cursor: pointer;
+}

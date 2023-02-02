@@ -8,8 +8,25 @@
   justify-content: center;
   align-items: center;
 
+  @include mobile {
+    margin: 10px;
+    width: calc(100% - 20px);
+    height: 12%;
+    border-top: 0;
+    border-right: 0;
+  }
+
   .side-bar__menu {
     width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    @include mobile {
+      height: 100%;
+      flex-direction: row;
+      justify-content: space-between;
+    }
 
     .side-bar__menu__item {
       display: flex;
@@ -19,7 +36,12 @@
       font-size: 1.5rem;
       cursor: pointer;
 
-      &:hover{
+      @include mobile {
+        width: 100%;
+        font-size: 1.2rem;
+      }
+
+      &:hover {
         background-color: $text;
         color: $background;
         transition: all 0.2s ease-in-out;
@@ -30,14 +52,12 @@
       border: 3px solid $text;
       border-left: 0;
       border-right: 0;
-    }
-  }
 
-  @include mobile {
-    margin: 10px;
-    width: calc(100% - 20px);
-    height: 15%;
-    border-top: 0;
-    border-right: 0;
+      @include mobile {
+        border: 3px solid $text;
+        border-top: 0;
+        border-bottom: 0;
+      }
+    }
   }
 }

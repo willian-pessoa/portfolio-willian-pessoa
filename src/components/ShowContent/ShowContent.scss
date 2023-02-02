@@ -1,13 +1,15 @@
-.show-content{
+.show-content {
   width: 70%;
   height: calc(100% - 40px);
   border: 3px solid $text;
   border-bottom: 0;
   margin: 20px;
 
-  @include mobile{
+  @include mobile {
     margin: 10px;
     width: calc(100% - 20px);
     height: 85%;
+    border-left: 0;
+    border-right: 0;
   }
 }

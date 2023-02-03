@@ -1,7 +1,13 @@
 import React from 'react'
 
-export default function Projects() {
+export default function Projects({active}) {
   return (
-    <div>Projects</div>
+    <div
+      className={`content-container ${
+        active ? "active-content" : "inactive-content"
+      }`}
+    >
+       Projetos de Willian
+    </div>
   )
 }

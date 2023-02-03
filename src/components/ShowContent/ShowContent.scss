@@ -4,6 +4,8 @@
   border: 3px solid $text;
   border-bottom: 0;
   margin: 20px;
+  padding-left: 15px;
+  position: relative;
 
   @include mobile {
     margin: 10px;
@@ -11,5 +13,6 @@
     height: 88%;
     border-left: 0;
     border-right: 0;
+    padding-left: 0;
   }
 }

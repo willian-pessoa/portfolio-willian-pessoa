@@ -1,7 +1,15 @@
-import React from 'react'
+import React from "react";
 
-export default function About() {
+import "./About.scss";
+
+export default function About({ active }) {
   return (
-    <div>About</div>
-  )
+    <div
+      className={`content-container ${
+        active ? "active-content" : "inactive-content"
+      }`}
+    >
+      Olá eu sou Willian
+    </div>
+  );
 }

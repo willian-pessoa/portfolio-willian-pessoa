@@ -1,15 +1,10 @@
 import React from "react";
+import ContentContainer from "../ContentContainer/ContentContainer";
 
 import "./About.scss";
 
 export default function About({ active }) {
   return (
-    <div
-      className={`content-container ${
-        active ? "active-content" : "inactive-content"
-      }`}
-    >
-      Olá eu sou Willian
-    </div>
+    <ContentContainer active={active}>Olá eu sou Willian</ContentContainer>
   );
 }

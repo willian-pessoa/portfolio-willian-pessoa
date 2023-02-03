@@ -1,14 +1,6 @@
 import React from "react";
+import ContentContainer from "../ContentContainer/ContentContainer";
 
 export default function Contact({ active }) {
-  return (
-    <div
-    style={{zIndex:"3"}}
-      className={`content-container ${
-        active ? "active-content" : "inactive-content"
-      }`}
-    >
-      Enter em contato
-    </div>
-  );
+  return <ContentContainer active={active}>Entre em contato</ContentContainer>;
 }

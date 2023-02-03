@@ -1,13 +1,8 @@
-import React from 'react'
+import React from "react";
+import ContentContainer from "../ContentContainer/ContentContainer";
 
-export default function Projects({active}) {
+export default function Projects({ active }) {
   return (
-    <div
-      className={`content-container ${
-        active ? "active-content" : "inactive-content"
-      }`}
-    >
-       Projetos de Willian
-    </div>
-  )
+    <ContentContainer active={active}>Projetos de Willian</ContentContainer>
+  );
 }

@@ -9,7 +9,7 @@ $secondary: #b50e2a;
 }
 
 @mixin mobile {
-  @media (max-width: 610px) {
+  @media (max-width: 710px) {
     @content;
   }
 }

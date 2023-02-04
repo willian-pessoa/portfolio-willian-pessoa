@@ -59,5 +59,11 @@
         border-bottom: 0;
       }
     }
+
+    .in-focus {
+      background-color: $text;
+      color: $background;
+      transition: all 0.2s ease-in-out;
+    }
   }
 }

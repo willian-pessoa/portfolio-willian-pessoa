@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import "./App.scss";
 
@@ -11,7 +11,7 @@ import Contact from "@/components/Contact/Contact";
 
 export default function App() {
   const [contentToShow, setContentToShow] = useState({
-    about: true,
+    about: false,
     projects: false,
     contact: false,
   });
@@ -32,9 +32,18 @@ export default function App() {
     }
   };
 
+  useEffect(() => {
+    setTimeout(() => {
+      handleContentToShow("about");
+    }, 300);
+  }, []);
+
   return (
     <main className="App">
-      <SideBar handleContentToShow={handleContentToShow} />
+      <SideBar
+        contentToShow={contentToShow}
+        handleContentToShow={handleContentToShow}
+      />
       <ShowContent>
         <About active={contentToShow.about} />
         <Projects active={contentToShow.projects} />

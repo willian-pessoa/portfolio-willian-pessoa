@@ -5,6 +5,9 @@
   bottom: -99%;
   border: 3px solid $text;
   padding-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   @include mobile {
     border-right: 0;
@@ -13,10 +16,10 @@
 
 .active-content {
   bottom: -15px;
-  transition: all 1.5s ease-in-out;
+  transition: all 1.5s ease;
 }
 
 .inactive-content {
   bottom: -97%;
-  transition: all 1.5s ease-in-out;
+  transition: all 1.5s ease;
 }

@@ -1,22 +1,22 @@
 # Portfolio Willian Pessoa
 
-Uma pagina pessoal para apresentar sobre Willian Pessoa (autor), alguns projetos e links de contato. Com a ideia de possuir um desing mais minimalista.
+Uma pagina pessoal para apresentar sobre Willian Pessoa (autor), alguns projetos e links de contato. Com a ideia de possuir um design mais minimalista.
 
 #### [Demo](https://github.com/willian-pessoa/portfolio-willian-pessoa)
 
 ## Project Status
 
-A base do projeto está finalizada, mas com possiveis melhorias a ser feitas posteriormente, principais funcionalidades são:
+A base do projeto está finalizada, mas com possíveis melhorias a ser feitas posteriormente, principais funcionalidades são:
 
-- Usuario pode ver uma barra de navegação com as três seções disponeiveis e dois links de contato, linkedin e github.
+- Usuário pode ver uma barra de navegação com as três seções disponíveis e dois links de contato, LinkedIn e Github.
 
-- As seções são alteradas por uma animação de entrada ou saida na caixa de conteudo.
+- As seções são alteradas por uma animação de entrada ou saída na caixa de conteúdo.
 
-- A primeira seção é a sobre, contem um pouco de quem é Willian Pessoa e suas principais teconlogias de conhecimento.
+- A primeira seção é a sobre, contem um pouco de quem é Willian Pessoa e suas principais tecnologias de conhecimento.
 
 - A segunda seção é a de projetos, contem os dois projetos principais desenvolvidos até o momento.
 
-- A terceira seção é a de contato, contem links de contato, linkedin e github.
+- A terceira seção é a de contato, contem links de contato, LinkedIn e Github.
 
 ## Project Screen Shot(s)
 
@@ -41,11 +41,11 @@ Para iniciar o App:
 
 ## Reflection
 
-O projeto foi desenvolvido usando Next js, Reac js, Javascript, HTML, CSS, SCSS e React-Icons. 
+O projeto foi desenvolvido usando Next js, React js, Javascript, HTML, CSS, SCSS e React-Icons. 
 
-Primeiro desafio foi pensar no desing do site, eu queria algo mais minimalista e que fosse unico para mim tambem, porem eu não sou desing, então fiz algumas pesquisas de portfolios para me inspirar e poder construir algo.
+Primeiro desafio foi pensar no design do site, eu queria algo mais minimalista que fosse único para mim também, porem eu não sou design, então fiz algumas pesquisas de portfólios para me inspirar e poder construir algo.
 
-Segundo desafio que tive foi devido ao Next js ter atualizado para versão 13, e o ultimo projeto que eu tinha feito usando next, estava na versão 12, então ocorreram algumas modificações que eu precisei me atualizar sobre.
+Segundo desafio que tive foi devido ao Next js ter atualizado para versão 13, e o último projeto que eu tinha feito usando next, estava na versão 12, então ocorreram algumas modificações que precisei me atualizar sobre.
 
-Terceiro desafio foi escrever o codigo em si, apesar da pratica com os outros projetos 
-que já fiz ter facilitado o processo, o framework e a maneira como eu queria que as seções fossem apressentadas trouxe o desafio a mais para a escrita.
+Terceiro desafio foi escrever o código em si, apesar da prática com os outros projetos 
+que já fiz ter facilitado o processo, o framework e a maneira como eu queria que as seções fossem apresentadas trouxe o desafio a mais para a escrita.

@@ -8,7 +8,7 @@ const PROJECTS = [{
 {
   name: "Portfolio",
   description: "Portfolio pessoal com intuito de praticar habilidades de front end e construir um espaço para apresentar os principais projetos até o momento.",
-  image: "/assets/portfolio.jpg",
+  image: "/assets/portfolio-sobre.jpg",
   github: "https://github.com/willian-pessoa/portfolio-willian-pessoa",
   demo: "https://github.com/willian-pessoa/portfolio-willian-pessoa"
 }]

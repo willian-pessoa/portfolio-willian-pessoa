@@ -5,7 +5,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 5px 30px;
+  padding: 5px 20px;
 
   @include mobile{
     padding: 5px 10px;
@@ -15,6 +15,7 @@
     display: flex;
     justify-content: space-around;
     margin-bottom: 16px;
+    padding-left: 10px;
 
     .about__profile__image {
       width: 150px;
@@ -29,7 +30,7 @@
     .about__profile__description {
       width: 70%;
       text-align: center;
-      padding: 8px;
+      padding: 8px 4px;
 
       h1 {
         margin-bottom: 16px;

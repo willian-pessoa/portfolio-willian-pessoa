@@ -10,10 +10,18 @@
     display: flex;
     margin: 20px;
 
+    @include mobile{
+      flex-direction: column;
+    }
+
     .contact__list__item {
       margin: 20px;
       padding: 10px 20px;
       border: 2px solid $background;
+
+      @include mobile{
+        margin: 5px;
+      }
 
       a {
         display: flex;

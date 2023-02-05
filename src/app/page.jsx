@@ -13,7 +13,7 @@ export default function App() {
   const [contentToShow, setContentToShow] = useState({
     about: false,
     projects: false,
-    contact: false,
+    contact: !false,
   });
 
   const handleContentToShow = (content) => {
@@ -32,10 +32,10 @@ export default function App() {
     }
   };
 
-  useEffect(() => {
+/*   useEffect(() => {
     handleContentToShow("about");
   }, []);
-
+ */
   return (
     <main className="App">
       <SideBar

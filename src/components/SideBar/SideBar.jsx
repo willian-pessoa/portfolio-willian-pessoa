@@ -2,11 +2,14 @@
 
 import React, { useState } from "react";
 
+import { FaLinkedin, FaGithubSquare } from "react-icons/fa";
+
 import "./SideBar.scss";
 
 export default function SideBar({ handleContentToShow, contentToShow }) {
   return (
     <div className="side-bar">
+      <br />
       <ul className="side-bar__menu">
         <li
           onClick={() => handleContentToShow("sobre")}
@@ -33,6 +36,24 @@ export default function SideBar({ handleContentToShow, contentToShow }) {
           Contato
         </li>
       </ul>
+      <div className="side-bar__contact">
+        <a
+          href="https://www.linkedin.com/in/willian-pessoa/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <FaLinkedin />
+          &nbsp;Linkedin
+        </a>
+        <a
+          href="https://github.com/willian-pessoa"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <FaGithubSquare />
+          &nbsp;GitHub
+        </a>
+      </div>
     </div>
   );
 }

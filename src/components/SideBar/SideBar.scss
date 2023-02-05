@@ -5,7 +5,8 @@
   border-left: 0;
   margin: 20px;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
 
   @include mobile {
@@ -64,6 +65,19 @@
       background-color: $text;
       color: $background;
       transition: all 0.2s ease-in-out;
+    }
+  }
+
+  .side-bar__contact{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+
+    a{
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      font-size: 0.8rem;
     }
   }
 }

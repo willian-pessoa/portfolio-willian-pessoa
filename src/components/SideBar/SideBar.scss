@@ -79,5 +79,9 @@
       justify-content: space-around;
       font-size: 0.8rem;
     }
+
+    @include mobile{
+      display: none;
+    }
   }
 }

@@ -49,20 +49,21 @@ const TECHNOLOGIES = [
 export default function About({ active }) {
   return (
     <ContentContainer active={active}>
-      <div className="about">
+      <section className="about">
         <div className="about__profile">
           <div className="about__profile__image">
             <Image
               src={"/assets/willian.jpg"}
               alt="foto de perfil willian pessoa"
               fill
+              priority
               sizes="(max-width: 768px) 100vw,
               (max-width: 1200px) 50vw,
               33vw"
             />
           </div>
           <div className="about__profile__description">
-            <h1>Olá eu sou Willian</h1>
+            <h1>Olá eu sou Willian Pessoa</h1>
             <p>
               Desenvolvedor front-end, estudo programação desde agosto de 2021
               de forma autodidata via cursos online. Também sou formado em
@@ -83,7 +84,7 @@ export default function About({ active }) {
             })}
           </ul>
         </div>
-      </div>
+      </section>
     </ContentContainer>
   );
 }

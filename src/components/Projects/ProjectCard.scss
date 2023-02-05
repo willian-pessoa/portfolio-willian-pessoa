@@ -9,7 +9,7 @@
   margin: 10px;
   box-shadow: 0 2px 4px 0 rgb(255, 255, 255), 0 3px 10px 0 rgb(255, 255, 255);
 
-  @include mobile{
+  @include mobile {
     margin: 5px;
   }
 
@@ -25,23 +25,48 @@
     }
   }
 
-  p{
+  p {
     text-align: justify;
 
-    @include mobile{
+    @include mobile {
       font-size: 0.8rem;
     }
   }
 
-  h4{
+  h4 {
     display: flex;
     align-items: center;
     justify-content: space-around;
     font-size: 1.3rem;
+
+    @include mobile{
+      font-size: 1rem;
+    }
+
+    a{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 4px;
+      border: 1px solid $background;
+
+      span {
+        margin-left: 10px;
+        font-size: 0.8rem;
+
+        @include mobile {
+          font-size: 0.5rem;
+        }
+      }
+
+      &:hover{
+        border: 1px solid $text;
+      }
+    }
   }
 
-  &:hover{
-    .project-card__image{
+  &:hover {
+    .project-card__image {
       transform: scale(1.2) rotate(5deg);
     }
   }

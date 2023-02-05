@@ -12,7 +12,7 @@ import Contact from "@/components/Contact/Contact";
 export default function App() {
   const [contentToShow, setContentToShow] = useState({
     about: false,
-    projects: true,
+    projects: false,
     contact: false,
   });
 
@@ -32,13 +32,12 @@ export default function App() {
     }
   };
 
-  
- /*  useEffect(() => {
+  useEffect(() => {
     setTimeout(() => {
       handleContentToShow("about");
-    }, 300);
+    }, 100);
   }, []);
- */
+
   return (
     <main className="App">
       <SideBar

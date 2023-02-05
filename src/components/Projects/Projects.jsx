@@ -10,7 +10,7 @@ import "./Projects.scss";
 export default function Projects({ active }) {
   return (
     <ContentContainer active={active}>
-      <div className="projects">
+      <section className="projects">
         <h1>Projetos</h1>
         <div className="projects-wrapper">
           {PROJECTS.map((item, idx) => {
@@ -26,7 +26,7 @@ export default function Projects({ active }) {
             );
           })}
         </div>
-      </div>
+      </section>
     </ContentContainer>
   );
 }

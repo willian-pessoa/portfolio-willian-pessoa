@@ -11,7 +11,7 @@ export default function Projects({ active }) {
   return (
     <ContentContainer active={active}>
       <section className="projects">
-        <h1>Projetos</h1>
+        <h1>Principais Projetos</h1>
         <div className="projects-wrapper">
           {PROJECTS.map((item, idx) => {
             return (

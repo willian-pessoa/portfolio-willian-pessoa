@@ -33,9 +33,7 @@ export default function App() {
   };
 
   useEffect(() => {
-    setTimeout(() => {
-      handleContentToShow("about");
-    }, 100);
+    handleContentToShow("about");
   }, []);
 
   return (

@@ -8,7 +8,7 @@ import "./SideBar.scss";
 
 export default function SideBar({ handleContentToShow, contentToShow }) {
   return (
-    <div className="side-bar">
+    <nav className="side-bar">
       <br />
       <ul className="side-bar__menu">
         <li
@@ -54,6 +54,6 @@ export default function SideBar({ handleContentToShow, contentToShow }) {
           &nbsp;GitHub
         </a>
       </div>
-    </div>
+    </nav>
   );
 }

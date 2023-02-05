@@ -8,6 +8,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: $background;
 
   @include mobile {
     border-right: 0;

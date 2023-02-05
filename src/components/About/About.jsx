@@ -56,16 +56,18 @@ export default function About({ active }) {
               src={"/assets/willian.jpg"}
               alt="foto de perfil willian pessoa"
               fill
+              sizes="(max-width: 768px) 100vw,
+              (max-width: 1200px) 50vw,
+              33vw"
             />
           </div>
           <div className="about__profile__description">
             <h1>Olá eu sou Willian</h1>
             <p>
-              Desenvolvedor front-end, estudo programação desde agosto de 2021 de forma autodidata via
-              cursos online. Também sou formado em matemática pela Universidade
-              Federal de Catalão e quatro vezes medalhista na olimpíada nacional
-              de matemática, sendo duas medalhas de ouro e duas medalhas de
-              bronze.
+              Desenvolvedor front-end, estudo programação desde agosto de 2021
+              de forma autodidata via cursos online. Também sou formado em
+              matemática e quatro vezes medalhista na olimpíada nacional de
+              matemática, sendo duas medalhas de ouro e duas medalhas de bronze.
             </p>
           </div>
         </div>

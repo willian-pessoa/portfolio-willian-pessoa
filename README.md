@@ -2,7 +2,7 @@
 
 Uma pagina pessoal para apresentar sobre Willian Pessoa (autor), alguns projetos e links de contato. Com a ideia de possuir um design mais minimalista.
 
-#### [Demo](https://portfolio-willian-pessoa.vercel.app/)
+### [Demo](https://portfolio-willian-pessoa.vercel.app/)
 
 ## Project Status
 
@@ -21,11 +21,6 @@ A base do projeto está finalizada, mas com possíveis melhorias a ser feitas po
 ## Project Screen Shot(s)
 
 ![Sobre](./public/assets/portfolio-sobre.jpg)
-
-![Projetos](./public/assets/portfolio-projetos.jpg)
-
-![Contato](./public/assets/portfolio-contato.jpg)
-
 
 ## Installation and Setup Instructions
 

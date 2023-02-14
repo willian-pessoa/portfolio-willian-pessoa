@@ -17,13 +17,26 @@ import PROJECTS from "./data";
 
 import "./Carousel.scss";
 
+const LENGHT = PROJECTS.length;
+
 const Carousel = () => {
   const [currentCard, setCurrentCard] = useState(0);
+
+  const handleNextCard = () => {
+    setCurrentCard((prev) => (prev === LENGHT - 1 ? 0 : prev + 1));
+  };
+
+  const handlePrevCard = () => {
+    setCurrentCard((prev) => (prev === 0 ? LENGHT - 1 : prev - 1));
+  };
 
   return (
     <div className="container-pai">
       <div className="carousel">
-        <IoIosArrowDropleftCircle size="50" />
+        <IoIosArrowDropleftCircle
+          onClick={handlePrevCard}
+          className="carousel__arrow"
+        />
         <div className="carousel__cards">
           {PROJECTS.map((item, idx) => {
             if (idx !== currentCard) return null;
@@ -46,7 +59,10 @@ const Carousel = () => {
             })}
           </div>
         </div>
-        <IoIosArrowDroprightCircle size="50" />
+        <IoIosArrowDroprightCircle
+          onClick={handleNextCard}
+          className="carousel__arrow"
+        />
       </div>
     </div>
   );

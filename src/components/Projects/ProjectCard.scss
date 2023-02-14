@@ -1,7 +1,7 @@
 .project-card {
   position: relative;
-  width: 90%;
-  height: 75%;
+  width: 95%;
+  height: 95%;
   border: 2px solid $text;
   background-color: $background;
   display: flex;
@@ -26,12 +26,17 @@
 
   .project-card__text {
     background-color: rgba($color: $background, $alpha: 0.4);
+    width: 100%;
     align-self: end;
     text-align: center;
     transition: all 0.5s ease;
     border-top: 2px solid $text;
     padding: 8px;
     z-index: 1;
+
+    @include mobile {
+      background-color: rgba($color: $background, $alpha: 1);
+    }
 
     p {
       margin: 8px 0;

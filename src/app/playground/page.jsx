@@ -1,6 +1,6 @@
 import React from "react";
 
-import Carousel from "@/components/sharedComponents/Carousel/Carousel";
+import Carousel from "@/components/Projects/Carousel";
 
 const Playground = () => {
   return (

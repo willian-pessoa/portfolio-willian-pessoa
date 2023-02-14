@@ -1,73 +1,93 @@
 .project-card {
-  width: 45%;
-  height: 75%;
+  position: relative;
+  width: 95%;
+  height: 95%;
   border: 2px solid $text;
+  background-color: $background;
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  padding: 5px;
   margin: 10px;
- box-shadow: 0 2px 4px 0 rgb(255, 255, 255), 0 3px 10px 0 rgb(255, 255, 255);
 
   @include mobile {
     margin: 5px;
   }
 
   .project-card__image {
-    position: relative;
+    position: absolute;
     overflow: hidden;
     width: 100%;
-    height: 50%;
+    height: 100%;
     transition: all 0.7s ease;
+    z-index: 0;
 
     img {
       object-fit: cover;
     }
   }
 
-  p {
-    text-align: left;
+  .project-card__text {
+    background-color: rgba($color: $background, $alpha: 0.4);
+    width: 100%;
+    align-self: end;
+    text-align: center;
+    transition: all 0.5s ease;
+    border-top: 2px solid $text;
+    padding: 8px;
+    z-index: 1;
 
     @include mobile {
-      font-size: 0.8rem;
-    }
-  }
-
-  h4 {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    font-size: 1.3rem;
-
-    @include mobile{
-      font-size: 1rem;
+      background-color: rgba($color: $background, $alpha: 1);
     }
 
-    a{
+    p {
+      margin: 8px 0;
+
+      @include mobile {
+        font-size: 0.8rem;
+      }
+    }
+
+    h4 {
       display: flex;
       align-items: center;
-      justify-content: center;
-      padding: 4px;
-      border: 1px solid $background;
+      justify-content: space-around;
+      font-size: 1.3rem;
 
-      span {
-        margin-left: 10px;
-        font-size: 0.8rem;
-
-        @include mobile {
-          font-size: 0.5rem;
-        }
+      @include mobile {
+        font-size: 1rem;
       }
 
-      &:hover{
-        border: 1px solid $text;
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 4px;
+        border: 1px solid $background;
+
+        span {
+          margin-left: 10px;
+          font-size: 0.8rem;
+
+          @include mobile {
+            font-size: 0.5rem;
+          }
+        }
+
+        &:hover {
+          border: 1px solid $text;
+        }
       }
     }
   }
 
   &:hover {
+
     .project-card__image {
-      transform: scale(1.2) rotate(5deg);
+      transform: scale(1.2);
+    }
+
+    .project-card__text{
+      background-color: rgba($color: $background, $alpha: 1);
+      transition: all 0.5s ease;
     }
   }
 }

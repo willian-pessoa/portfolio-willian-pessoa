@@ -19,18 +19,20 @@ const ProjectCard = ({ title, description, image, github, demo }) => {
               33vw"
         />
       </div>
-      <h3>{title}</h3>
-      <p>{description}</p>
-      <h4>
-        <a href={github} target="_blank" rel="noreferrer">
-          <FaGithub />
-          <span>Git Hub</span>
-        </a>
-        <a href={demo} target="_blank" rel="noreferrer">
-          <CgWebsite />
-          <span>Demo</span>
-        </a>
-      </h4>
+      <div className="project-card__text">
+        <h3>{title}</h3>
+        <p>{description}</p>
+        <h4>
+          <a href={github} target="_blank" rel="noreferrer">
+            <FaGithub />
+            <span>Git Hub</span>
+          </a>
+          <a href={demo} target="_blank" rel="noreferrer">
+            <CgWebsite />
+            <span>Demo</span>
+          </a>
+        </h4>
+      </div>
     </div>
   );
 };

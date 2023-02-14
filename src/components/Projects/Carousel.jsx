@@ -31,39 +31,37 @@ const Carousel = () => {
   };
 
   return (
-    <div className="container-pai">
-      <div className="carousel">
-        <IoIosArrowDropleftCircle
-          onClick={handlePrevCard}
-          className="carousel__arrow"
-        />
-        <div className="carousel__cards">
+    <div className="carousel">
+      <IoIosArrowDropleftCircle
+        onClick={handlePrevCard}
+        className="carousel__arrow"
+      />
+      <div className="carousel__cards">
+        {PROJECTS.map((item, idx) => {
+          if (idx !== currentCard) return null;
+          return (
+            <ProjectCard
+              key={idx}
+              title={item.name}
+              description={item.description}
+              image={item.image}
+              github={item.github}
+              demo={item.demo}
+            />
+          );
+        })}
+        <div className="carousel__circles">
           {PROJECTS.map((item, idx) => {
-            if (idx !== currentCard) return null;
-            return (
-              <ProjectCard
-                key={idx}
-                title={item.name}
-                description={item.description}
-                image={item.image}
-                github={item.github}
-                demo={item.demo}
-              />
-            );
+            if (idx === currentCard)
+              return <RiCheckboxBlankCircleFill key={idx} />;
+            return <RiCheckboxBlankCircleLine key={idx} />;
           })}
-          <div className="carousel__circles">
-            {PROJECTS.map((item, idx) => {
-              if (idx === currentCard)
-                return <RiCheckboxBlankCircleFill key={idx} />;
-              return <RiCheckboxBlankCircleLine key={idx} />;
-            })}
-          </div>
         </div>
-        <IoIosArrowDroprightCircle
-          onClick={handleNextCard}
-          className="carousel__arrow"
-        />
       </div>
+      <IoIosArrowDroprightCircle
+        onClick={handleNextCard}
+        className="carousel__arrow"
+      />
     </div>
   );
 };

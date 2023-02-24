@@ -5,12 +5,16 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 
   .contact__list {
+    width: 90%;
     display: flex;
+    align-items: center;
+    justify-content: space-around;
     margin: 20px;
 
-    @include mobile{
+    @include mobile {
       flex-direction: column;
     }
 
@@ -19,7 +23,7 @@
       padding: 10px 20px;
       border: 2px solid $background;
 
-      @include mobile{
+      @include mobile {
         margin: 5px;
       }
 
@@ -27,7 +31,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
       }
 
       &:hover {

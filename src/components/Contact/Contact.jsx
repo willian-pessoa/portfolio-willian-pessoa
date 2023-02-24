@@ -2,6 +2,7 @@ import React from "react";
 import ContentContainer from "../ContentContainer/ContentContainer";
 
 import { FaLinkedin, FaGithubSquare } from "react-icons/fa";
+import {SiLeetcode} from "react-icons/si"
 
 import "./Contact.scss";
 
@@ -29,6 +30,16 @@ export default function Contact({ active }) {
             >
               <FaGithubSquare />
               &nbsp;GitHub
+            </a>
+          </li>
+          <li className="contact__list__item">
+            <a
+              href="https://leetcode.com/willian-pessoa/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <SiLeetcode />
+              &nbsp;LeetCode
             </a>
           </li>
         </ul>

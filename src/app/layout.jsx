@@ -1,12 +1,13 @@
-import '../styles/globals.scss'
-import { Roboto } from "@next/font/google"
+import { AnalyticsWrapper } from "./analytics";
+
+import "../styles/globals.scss";
+import { Roboto } from "@next/font/google";
 
 const roboto = Roboto({
   weight: ["100", "300", "400", "500", "700", "900"],
-  style: ['normal', 'italic'],
-  subsets: ["latin"]
-})
-
+  style: ["normal", "italic"],
+  subsets: ["latin"],
+});
 
 export default function RootLayout({ children }) {
   return (
@@ -18,7 +19,8 @@ export default function RootLayout({ children }) {
       <head />
       <body>
         {children}
+        <AnalyticsWrapper />
       </body>
     </html>
-  )
+  );
 }

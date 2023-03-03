@@ -6,6 +6,13 @@ const PROJECTS = [{
   demo: "https://willian-pessoa.github.io/blizzard-challenge/"
 },
 {
+  name: "Calculadora TMB",
+  description: "Uma calculadora de Taxa Metabolica Basal(TMB) usando a equação de Harris-Benedict.",
+  image: "/assets/calculadora-tmb.jpg",
+  github: "https://github.com/willian-pessoa/calcula-ae",
+  demo: "https://calcula-ae.vercel.app/"
+},
+{
   name: "Comms Reviewer",
   description: "Web App para revisar comutadores de BLD, são parzinhos de letras associados com algoritmos, o app mostra esses pares de forma aleatoria de acordo com o algortimo do app.",
   image: "/assets/comms-reviewer.jpg",

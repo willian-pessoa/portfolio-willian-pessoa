@@ -75,6 +75,7 @@
       flex-wrap: wrap;
       justify-content: space-around;
       padding: 8px 0 0 0;
+      gap: 0 1rem;
       
       @include mobile {
         padding-top: 4px;

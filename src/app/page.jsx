@@ -11,7 +11,7 @@ import Contact from "@/components/Contact/Contact";
 
 export default function App() {
   const [contentToShow, setContentToShow] = useState({
-    about: false,
+    about: true,
     projects: false,
     contact: false,
   });
@@ -31,10 +31,6 @@ export default function App() {
         setContentToShow({ about: true, projects: false, contact: false });
     }
   };
-
-  useEffect(() => {
-    handleContentToShow("about");
-  }, []);
 
   return (
     <main className="App">

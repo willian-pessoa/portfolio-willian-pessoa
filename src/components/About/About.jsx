@@ -12,16 +12,17 @@ import {
   TbBrandCss3,
   TbBrandSass,
 } from "react-icons/tb";
+import { SiExpress, SiMongodb, SiRedux, SiMui } from "react-icons/si";
 
 import "./About.scss";
 
 const TECHNOLOGIES = [
   {
-    name: "React js",
+    name: "React",
     icon: <RiReactjsFill />,
   },
   {
-    name: "Next js",
+    name: "Next",
     icon: <TbBrandNextjs />,
   },
   {
@@ -41,8 +42,24 @@ const TECHNOLOGIES = [
     icon: <TbBrandSass />,
   },
   {
-    name: "Node js",
+    name: "Node",
     icon: <FaNodeJs />,
+  },
+  {
+    name: "Express",
+    icon: <SiExpress />,
+  },
+  {
+    name: "MongoDB",
+    icon: <SiMongodb />,
+  },
+  {
+    name: "Redux",
+    icon: <SiRedux />,
+  },
+  {
+    name: "MUI",
+    icon: <SiMui />,
   },
 ];
 
@@ -78,7 +95,7 @@ export default function About({ active }) {
             {TECHNOLOGIES.map((item, idx) => {
               return (
                 <li key={idx} className="about__technologies__list__item">
-                  {item.icon} <span>{item.name}</span>
+                  {item.icon} {" "}<span>{item.name}</span>
                 </li>
               );
             })}

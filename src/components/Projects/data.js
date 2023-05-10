@@ -6,6 +6,12 @@ const PROJECTS = [{
   demo: "https://willian-pessoa.github.io/blizzard-challenge/"
 },
 {
+  name: "Cubestore Dashboard",
+  description: "Projeto full stack, dashboard consumindo dados atraves de uma API e apresentando em forma de tabelas e graficos, login de admin, algumas rotas do back-end protegida por JWT.",
+  image: "/assets/dashboard.jpg",
+  github: "https://github.com/willian-pessoa/cubestore-client",
+  demo: "https://cubestore-client.vercel.app/"
+}, {
   name: "Calculadora TMB",
   description: "Uma calculadora de Taxa Metabolica Basal(TMB) usando a equação de Harris-Benedict.",
   image: "/assets/calculadora-tmb.jpg",

@@ -4,6 +4,7 @@
   box-sizing: border-box;
   color: $text;
   overflow: hidden;
+  font-family: sans-serif;
 }
 
 body {
@@ -21,9 +22,7 @@ a {
   all: unset;
 }
 
-
 a,
 button {
   cursor: pointer;
 }
-

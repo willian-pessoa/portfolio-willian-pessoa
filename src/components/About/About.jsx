@@ -11,6 +11,7 @@ import {
   TbBrandHtml5,
   TbBrandCss3,
   TbBrandSass,
+  TbBrandTypescript
 } from "react-icons/tb";
 import { SiExpress, SiMongodb, SiRedux, SiMui } from "react-icons/si";
 
@@ -28,6 +29,10 @@ const TECHNOLOGIES = [
   {
     name: "JavaScript",
     icon: <TbBrandJavascript />,
+  },
+  {
+    name: "TypeScript",
+    icon: <TbBrandTypescript />,
   },
   {
     name: "HTML",

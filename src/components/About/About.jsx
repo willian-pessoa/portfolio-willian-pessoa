@@ -2,6 +2,7 @@ import React from "react";
 import ContentContainer from "../ContentContainer/ContentContainer";
 
 import Image from "next/image";
+import WillianPicture from "../../../public/assets/willian.jpg";
 
 import { RiReactjsFill } from "react-icons/ri";
 import { FaNodeJs } from "react-icons/fa";
@@ -11,7 +12,7 @@ import {
   TbBrandHtml5,
   TbBrandCss3,
   TbBrandSass,
-  TbBrandTypescript
+  TbBrandTypescript,
 } from "react-icons/tb";
 import { SiExpress, SiMongodb, SiRedux, SiMui } from "react-icons/si";
 
@@ -75,10 +76,11 @@ export default function About({ active }) {
         <div className="about__profile">
           <div className="about__profile__image">
             <Image
-              src={"/assets/willian.jpg"}
+              src={WillianPicture}
               alt="foto de perfil willian pessoa"
               fill
               priority
+              placeholder="blur"
               sizes="(max-width: 768px) 100vw,
               (max-width: 1200px) 50vw,
               33vw"
@@ -100,7 +102,7 @@ export default function About({ active }) {
             {TECHNOLOGIES.map((item, idx) => {
               return (
                 <li key={idx} className="about__technologies__list__item">
-                  {item.icon} {" "}<span>{item.name}</span>
+                  {item.icon} <span>{item.name}</span>
                 </li>
               );
             })}
